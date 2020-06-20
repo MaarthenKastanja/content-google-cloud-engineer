@@ -40,7 +40,7 @@ PRODUCT_SUBNET="fs-dev-prod-app-network-subnet"
 ADS_SUBNET="fs-dev-ad-app-network-subnet"
 
 # The name of the Kubernetes cluster used for the products service
-PRODUCT_CLUSTER_NAME="ffs-dev-app-clusters"
+PRODUCT_CLUSTER_NAME="fs-dev-app-clusters"
 
 # The name of the spanner instance
 PRODUCT_DB_INSTANCE_NAME="fs-dev-app-spanner-instance"
