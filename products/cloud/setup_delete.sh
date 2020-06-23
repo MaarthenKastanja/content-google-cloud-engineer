@@ -7,6 +7,12 @@ source ../../common/project_settings.sh
 
 SERVICE_ACCOUNT_NAME=product-service
 
+# gcloud iam service-accounts delete \
+#     $(gcloud iam service-accounts list \
+#     --filter="displayName:product-service" \
+#     --format='value(email)') \
+#     --quiet
+
 gcloud iam service-accounts delete \
     $(gcloud iam service-accounts list \
     --filter="displayName:$SERVICE_ACCOUNT_NAME" \
