@@ -17,4 +17,4 @@ handlers:
   login: required
 
 env_variables:
-  APP_TOPIC: 'fs2-items'
+  APP_TOPIC: 'fs-dev-items'

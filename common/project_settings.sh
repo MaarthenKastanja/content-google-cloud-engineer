@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The name of the project to deploy services into.
-PROJECT_NAME="find-seller-morph-app-dev"
+PROJECT_NAME="find-seller-djmorph-app-dev"
 
 # Which default region should regional services use?
 PROJECT_REGION="us-central1"
@@ -21,11 +21,11 @@ ORGANIZATION="find-seller"
 
 # This is the Storage bucket used for public assets. 
 # The entire bucket is public by default
-PUBLIC_ASSETS="fs-dev-morph-public-bucket"
+PUBLIC_ASSETS="fs-dev-djmorph-public-bucket"
 
 # This is the Storage bucket used for private assets. 
 # The entire bucket is private by default
-PRIVATE_ASSETS="fs-dev-morph-private-bucket"
+PRIVATE_ASSETS="fs-dev-djmorph-private-bucket"
 
 # The name of the Pubsub topic to create / use
 PUB_SUB_TOPIC="fs-dev-items"

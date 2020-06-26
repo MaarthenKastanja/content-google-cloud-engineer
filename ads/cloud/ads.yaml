@@ -10,15 +10,15 @@ resources:
     region: us-central1
     zone: us-central1-b
     prefix: ads-service
-    privateBucket: fs-dev-morph-private-bucket
-    publicBucket: fs-dev-morph-public-bucket
+    privateBucket: fs-dev-djmorph-private-bucket
+    publicBucket: fs-dev-djmorph-public-bucket
     spannerDatabase: fs-dev-app-spanner-db
     spannerInstance: fs-dev-app-spanner-instance
     network: fs-dev-app-network
     subnet: fs-dev-ad-app-network-subnet
-    projectID: find-seller-morph-app-dev
+    projectID: find-seller-djmorph-app-dev
     adBinName: app
-    serviceAccount: 432029008951-compute@developer.gserviceaccount.com
+    serviceAccount: 48476620052-compute@developer.gserviceaccount.com
 
 
 - name: ads-deployment-autoscaler
@@ -26,8 +26,8 @@ resources:
   properties:
     zone: us-central1-b
     prefix: ads-service
-    privateBucket: fs-dev-morph-private-bucket
-    projectID: find-seller-morph-app-dev
+    privateBucket: fs-dev-djmorph-private-bucket
+    projectID: find-seller-djmorph-app-dev
     adBinName: app
     size: 1
     maxSize: 2
@@ -37,4 +37,4 @@ resources:
   properties:
     prefix: ads-service
     network: fs-dev-app-network
-    projectID: find-seller-morph-app-dev
+    projectID: find-seller-djmorph-app-dev

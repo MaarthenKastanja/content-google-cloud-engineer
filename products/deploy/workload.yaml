@@ -11,8 +11,8 @@ data:
   # It mounts the secret to that path.
   # The secret is created in the deploy.sh file for this service
   SERVICE_ACCOUNT_FILE_NAME: "/sa/service_account.json" 
-  PROJECT_ID: "find-seller-morph-app-dev"
-  PRODUCT_CACHE_BUCKET: "fs-dev-morph-public-bucket"
+  PROJECT_ID: "find-seller-djmorph-app-dev"
+  PRODUCT_CACHE_BUCKET: "fs-dev-djmorph-public-bucket"
 ---
 apiVersion: "extensions/v1beta1"
 kind: "Deployment"
@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: "products"
-        image: "gcr.io/find-seller-morph-app-dev/products:latest"
+        image: "gcr.io/find-seller-djmorph-app-dev/products:latest"
         volumeMounts:
         - name: service-account
           mountPath: "/sa/"
